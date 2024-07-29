@@ -1,0 +1,52 @@
+{
+    "name": "react-leaflet-nauticsale",
+    "version": "1.0.0",
+    "description": "React-leaflet-nauticsale is a plugin for react-leaflet. A wrapper component of leaflet.nauticscale.",
+    "keywords": [
+        "React",
+        "Leaflet",
+        "heatmap",
+        "heat",
+        "react-leaflet-v4"
+    ],
+    "homepage": "https://github.com/LockBlock-dev/react-leaflet-nauticsale#readme",
+    "bugs": {
+        "url": "https://github.com/LockBlock-dev/react-leaflet-nauticsale/issues"
+    },
+    "license": "MIT",
+    "author": "LockBlock-dev",
+    "funding": {
+        "type": "ko-fi",
+        "url": "https://ko-fi.com/lockblock"
+    },
+    "files": [
+        "dist/**/*"
+    ],
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LockBlock-dev/react-leaflet-nauticsale.git"
+    },
+    "scripts": {
+        "build": "tsc && npm run minify",
+        "minify": "uglifyjs --compress --mangle --output dist/index.min.js -- dist/index.js"
+    },
+    "dependencies": {
+        "leaflet.nauticscale": "^1.1.0"
+    },
+    "peerDependencies": {
+        "leaflet": ">=1.8.0",
+        "react": ">=18.0.0",
+        "react-dom": ">=18.0.0",
+        "react-leaflet": ">=4.0.0"
+    },
+    "devDependencies": {
+        "@react-leaflet/core": "^2.1.0",
+        "@types/leaflet": "^1.9.12",
+        "@types/node": "^18.0.0",
+        "@types/react": "^18.0.0",
+        "@types/react-dom": "^18.0.0",
+        "uglify-js": "^3.19.1"
+    }
+}
